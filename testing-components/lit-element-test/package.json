@@ -1,0 +1,25 @@
+{
+  "name": "lit-element-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --coverage",
+    "test:watch": "karma start --auto-watch=true --single-run=false",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:prune-snapshots": "karma start --prune-snapshots",
+    "test:compatibility": "karma start --compatibility all --auto-watch=true --single-run=false"
+  },
+  "keywords": [],
+  "author": "Joel Humberto Gómez Paredes <elmaildeldezkareid@gmail.com> (https://twitter.com/DezkaReid)",
+  "license": "ISC",
+  "devDependencies": {
+    "@open-wc/testing": "^2.0.4",
+    "@open-wc/testing-karma": "^3.0.4",
+    "deepmerge": "^4.0.0",
+    "karma": "^4.2.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.0"
+  }
+}
