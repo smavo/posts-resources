@@ -1,17 +1,12 @@
 /* eslint-env jest */
 import React from 'react'
+import { render } from '@testing-library/react'
 import Counter from '../../src/counter'
-import { render, fireEvent } from '@testing-library/react'
 
-describe('Counter suite', () => {
-  test('when is mounted display text 0', () => {
-    const { container } = render(<Counter />)
-    expect(container.textContent).toEqual('0')
-  })
-
-  test('when is clicked one time, text must be 1', () => {
-    const { container, getByText } = render(<Counter />)
-    fireEvent.click(getByText(/0/))
-    expect(container.textContent).toEqual('1')
+describe('Test Suite Counter Component - Component to display a counter', () => {
+  it('Should display 0, by default', () => {
+    const { getByText } = render(<Counter />)
+    const result = getByText('0')
+    expect(result).toBeDefined()
   })
 })
