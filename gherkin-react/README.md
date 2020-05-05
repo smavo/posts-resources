@@ -7,7 +7,7 @@ Testing using gherkin specifications
 ```bash
 yarn
 ```
-
+or
 ```bash
 npm install
 ```
