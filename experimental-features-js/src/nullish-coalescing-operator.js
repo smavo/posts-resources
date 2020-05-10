@@ -1,5 +1,5 @@
 export function getRole(user) {
-  return user.rol || 'Default';
+  return user.role || 'Default';
 }
 
 export function getRoleOldWay(user) {
