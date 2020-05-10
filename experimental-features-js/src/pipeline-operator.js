@@ -1,4 +1,3 @@
-
 function setRole(role, user) {
   return { ...user, role };
 }
