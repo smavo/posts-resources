@@ -20,6 +20,17 @@ Run testing in components
 yarn test
 ```
 
+Run testing in cypress
+
+```bash
+yarn start
+```
+and in another tab
+
+```bash
+yarn cypress:run
+```
+
 ## Run lint
 
 Run gherkin lint
