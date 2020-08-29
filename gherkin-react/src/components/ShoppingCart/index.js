@@ -7,7 +7,7 @@ function ShoppingList({ products }) {
   }
   const liElements = products.map((product, index) => <li key={index}>{product.name}</li>)
   return  (
-    <ul>
+    <ul className="shopping-cart--list">
       {liElements}
     </ul>
   )
@@ -15,7 +15,7 @@ function ShoppingList({ products }) {
 
 function ShoppingTotal({ products }) {
   const total = products.reduce((accumulator, product) => accumulator + product.price, 0);
-  return <div>{`Total: ${total}`}</div>
+  return <div className="shopping-cart--total">{`Total: ${total}`}</div>
 }
 function ShoppingCart(props) {
   const { products = [] } = props;
